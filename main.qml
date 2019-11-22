@@ -4,7 +4,7 @@ import WidgetItem 1.0
 
 Window {
     visible: true
-    width: 300
+    width: 450
     height: 70
     title: qsTr("Hello Widget")
 
