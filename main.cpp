@@ -17,18 +17,6 @@ int main(int argc, char *argv[])
 
     WidgetItem* widgetItem = nullptr;
 
-//    QProgressBar progressBar;
-//    progressBar.setRange(0, 100);
-//    progressBar.setValue(0);
-
-//    QTimer timer;
-//    timer.setInterval(500);
-
-//    QObject::connect(&timer, &QTimer::timeout, [&progressBar, &widgetItem]() {
-//        progressBar.setValue(progressBar.value() + 1);
-//        widgetItem->update();
-//    });
-
     QPushButton button("good old push button");
 
     // Could we move this inside WidgetItem?
@@ -38,8 +26,6 @@ int main(int argc, char *argv[])
         Q_ASSERT(widgetItem);
         widgetItem->setWidget(&button);
     });
-
-//    timer.start();
 
     engine.load(url);
 
